@@ -52,7 +52,7 @@ $(document).ready(function () {
     $("#remaining-time").hide();//hides the timer before the user presses start
     $("#current-question").hide();// hides the current questions row
     $("#start").on("click", startGame);//onclick event listener to fire trivia.gameStart anytime the start button is pushed
-    
+})
 
 function startGame()
 {
@@ -149,4 +149,3 @@ function timerCount() {
     }
    
 }
-
