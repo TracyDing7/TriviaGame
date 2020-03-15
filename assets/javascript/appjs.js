@@ -93,10 +93,8 @@ function showquestion() {
 }
 
 function checkAnswer() {
-    var inputval = $(this).val();
-    console.log(inputval);
-    var currentAnswer = Object.values(trivia.answers)[trivia.currentSet];
-    console.log(currentAnswer)
+    var inputval = $(this).val();     
+    var currentAnswer = Object.values(trivia.answers)[trivia.currentSet];  
     if (inputval === currentAnswer) {//if the user guesses right******************************
         trivia.correct++;//add 1 to correct variable
         clearInterval(trivia.timerId);//clear timer again
